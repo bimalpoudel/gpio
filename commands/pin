@@ -1,0 +1,7 @@
+#!/bin/bash
+# Purpose: On or OFF GPIO Pins
+# File: /usr/local/bin/pin
+# Usage Example: pin 0 up|down
+
+gpio mode ${1} out;
+gpio write ${1} ${2};
